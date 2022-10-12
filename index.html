@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Real Estate</title>
+</head>
+    <!-- SLICK -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+
+    <!-- FONR GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header__content">
+            <p><a href="#">Hous<span>ing</span></a></p>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- CAROULSEL -->
+    <div class="carousel">
+        <div class="carousel__content">
+            <div class="carousel__item">
+                <img src="./img/b1.jpg" alt="b1">
+                <div class="div">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <img src="./img/b2.jpg" alt="b2">
+                <div class="div">
+                    <h1>Lorem ipsum dolor sit do.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <img src="./img/b3.jpg" alt="b3">
+                <div class="div">
+                    <h1>Lorem ipsum dolor sit tuan.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <img src="./img/b4.jpg" alt="b4">
+                <div class="div">
+                    <h1>Lorem ipsum dolor sit kiet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div class="about">
+        <div class="about__content">
+            <h3>about</h3>
+            <div class="about__icon">
+                <div class="about__item">
+                    <i class="fa fa-home"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perspiciatis rerum quaerat
+                        optio accusamus. Accusantium.</p>
+                </div>
+                <div class="about__item">
+                    <i class="fa fa-key"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perspiciatis rerum quaerat
+                        optio accusamus. Accusantium.</p>
+                </div>
+                <div class="about__item">
+                    <i class="fa fa-money-bill-alt"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perspiciatis rerum quaerat
+                        optio accusamus. Accusantium.</p>
+                </div>
+            </div>
+            <h2>About us</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit sed,
+                molestie nulla. Mauris et quam leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit
+                sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt ut velit id
+                euismod.vulputate turpis porta ex sodales, dignissim hendrerit eros sagittis. Curabitur lacinia dui ut
+                luctus congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis</p>
+        </div>
+    </div>
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stats__content">
+            <h3>stats</h3>
+            <div class="stats__num">
+                <div class="stats__item">
+                    <h1 class="counter">3500</h1>
+                    <p>clients</p>
+                </div>
+                <div class="stats__item">
+                    <h1 class="counter">650</h1>
+                    <p>Plans</p>
+                </div>
+                <div class="stats__item">
+                    <h1 class="counter">1021</h1>
+                    <p>projects</p>
+                </div>
+                <div class="stats__item">
+                    <h1 class="counter">1010</h1>
+                    <p>Likes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BLOG -->
+    <div class="blog"></div>
+    <!-- PORTFOLIO -->
+    <div class="portfolio"></div>
+    <!-- SUBSCRIBE -->
+    <div class="subscribe"></div>
+    <!-- AGENTS -->
+    <div class="agents"></div>
+    <!-- CONTACT -->
+    <div class="contact"></div>
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <!-- thư viện hỗ trợ jquerry giúp chạy hiệu ứng của các thư viện animation -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- SLICK CAROUSEL -->
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel__content').slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+                dots: true,
+                fade: true,
+                speed: 500,
+                cssEase: 'linear',
+                infinite: true,
+            });
+        });
+
+    </script>
+
+    <!-- jquery waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- Countup.js  -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        	$('.counter').countUp();
+    </script>
+</body>
+
+</html>
