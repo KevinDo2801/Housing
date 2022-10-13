@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Real Estate</title>
 </head>
-    <!-- SLICK -->
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
+<!-- BOOT TRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!-- FONR GOOGLE -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
-        rel="stylesheet">
+<!-- SLICK -->
+<link rel="stylesheet" href="./css/slick.css">
+<link rel="stylesheet" href="./css/slick-theme.css">
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!-- FONR GOOGLE -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/index.css">
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="./css/index.css">
 
 <body>
     <!-- HEADER -->
@@ -126,7 +129,90 @@
         </div>
     </div>
     <!-- BLOG -->
-    <div class="blog"></div>
+    <div class="blog">
+        <h3>blog</h3>
+        <div class="blog__content">
+            <figure class="blog__item">
+                <img src="./img/g1.jpg" alt="g1">
+                <figcaption class="blog__overlay">
+                    <h1 data-toggle="modal" data-target="#myModal1">Lorem Ipsum Passage,</h1>
+                    <p id="blog__detail1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium</p>
+                    <button data-toggle="modal" data-target="#myModal1">Read more..</button>
+                </figcaption>
+            </figure>
+            <figure class="blog__item">
+                <img src="./img/g2.jpg" alt="g2">
+                <figcaption class="blog__overlay">
+                    <h1 data-toggle="modal" data-target="#myModal2">Lorem Ipsum Passage,</h1>
+                    <p id="blog__detail1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium</p>
+                    <button data-toggle="modal" data-target="#myModal2">Read more..</button>
+                </figcaption>
+            </figure>
+            <figure class="blog__item">
+                <img src="./img/g1.jpg" alt="g1">
+                <figcaption class="blog__overlay">
+                    <h1 data-toggle="modal" data-target="#myModal3">Lorem Ipsum Passage,</h1>
+                    <p id="blog__detail1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium</p>
+                    <button data-toggle="modal" data-target="#myModal3">Read more..</button>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- PORTFOLIO -->
     <div class="portfolio"></div>
     <!-- SUBSCRIBE -->
@@ -141,6 +227,9 @@
     <!-- thư viện hỗ trợ jquerry giúp chạy hiệu ứng của các thư viện animation -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- jquery waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
     <!-- SLICK CAROUSEL -->
     <script type="text/javascript" src="./js/slick.min.js"></script>
@@ -159,14 +248,16 @@
 
     </script>
 
-    <!-- jquery waypoint -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-
     <!-- Countup.js  -->
     <script src="./js/jquery.countup.js"></script>
     <script>
-        	$('.counter').countUp();
+        $('.counter').countUp();
     </script>
+
+    <!-- Boot trap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
 </body>
 
 </html>

@@ -242,7 +242,6 @@ header{
     font-size: 3.7rem;
     margin: 0;
     color: #fff;
-    /* letter-spacing: 5px; */
 }
 
 .stats__num p{
@@ -257,6 +256,26 @@ header{
     padding: 4.5rem 0;
 }
 /* BLOG */
+
+.blog{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog__item{
+    width: 30%;
+}
+
+.blog__item img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* PORTFOLIO */
 /* SUBSCRIBE */
 /* AGENTS */
