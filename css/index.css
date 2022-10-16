@@ -81,6 +81,10 @@ header{
     color:  #00cdce;
     border-color: rgba(0, 0, 0, 0);
 }
+
+.header__content ul .active a{ 
+    border: none;
+}
 /* CAROULSEL */
 .carousel__item{
     position: relative;
@@ -679,6 +683,7 @@ footer{
     width: 80%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 2rem 0;
 }

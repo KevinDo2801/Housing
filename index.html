@@ -33,13 +33,13 @@
         <div class="header__content">
             <p><a href="#">Hous<span>ing</span></a></p>
             <nav>
-                <ul>
+                <ul id="mainNav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Agents</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <!-- ABOUT -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__content">
             <h3>about</h3>
             <div class="about__icon">
@@ -132,7 +132,7 @@
         </div>
     </div>
     <!-- BLOG -->
-    <div class="blog">
+    <div class="blog" id="blog">
         <!-- Main blog -->
         <h3>blog</h3>
         <div class="blog__content">
@@ -244,7 +244,7 @@
         </div>
     </div>
     <!-- PORTFOLIO -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h3>portfolio</h3>
         <div class="portfolio__content">
             <figure class="portfolio__item">
@@ -337,7 +337,7 @@
         </div>
     </div>
     <!-- AGENTS -->
-    <div class="agents">
+    <div class="agents" id="agents">
         <div class="agents__content">
             <h3>Our Agents</h3>
             <div class="agents__img">
@@ -396,7 +396,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.92232419213!2d-82.59436669114524!3d27.99441157160181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida!5e0!3m2!1svi!2sus!4v1664805416633!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- CONTACT -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <h3>Contact Us</h3>
         <div class="contact__content">
             <div class="contact__left">
@@ -474,5 +474,17 @@
     <script src="./js/main_BTT.js"></script>
     <script src="./js/util.js"></script>
 
+    <!-- navigation bar js -->
+    <script>
+        var mainNav = document.getElementById("mainNav");
+        var listNav = mainNav.getElementsByTagName("li");
+        for (var i = 0; i < listNav.length; i++){
+            listNav[i].addEventListener("click", function(){
+                var current = document.querySelector("#mainNav .active");
+                current.className = current.className.replace("active","");
+                this.className += "active";
+            })
+        }
+    </script>
 </body>
 </html>
