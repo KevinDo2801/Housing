@@ -21,6 +21,9 @@
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+<!-- Light Box -->
+<link rel="stylesheet" href="./css/lightbox.min.css">
+
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="./css/index.css">
 
@@ -130,6 +133,7 @@
     </div>
     <!-- BLOG -->
     <div class="blog">
+        <!-- Main blog -->
         <h3>blog</h3>
         <div class="blog__content">
             <figure class="blog__item">
@@ -166,14 +170,17 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Housing</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <img src="./img/img1.jpg" alt="img1">
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                            voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                            voluptas nulla pariatur.</p>
                     </div>
                 </div>
             </div>
@@ -183,14 +190,17 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Housing</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <img src="./img/img2.jpg" alt="img2">
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                            voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                            voluptas nulla pariatur.</p>
                     </div>
                 </div>
             </div>
@@ -200,29 +210,223 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Housing</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <img src="./img/img3.jpg" alt="img3">
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                            voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                            voluptas nulla pariatur.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- VIDEO -->
+    <div class="video">
+        <div class="video__main">
+            <img src="./img/video.jpg" alt="video">
+            <div class="video__play">
+                <i class="fa fa-play-circle"></i>
+            </div>
+        </div>
+        <div class="video__content">
+            <h3>Get More..</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim
+                veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                pariatur.</p>
+            <button data-toggle="modal" data-target="#myModal1">Read more..</button>
+        </div>
+    </div>
     <!-- PORTFOLIO -->
-    <div class="portfolio"></div>
+    <div class="portfolio">
+        <h3>portfolio</h3>
+        <div class="portfolio__content">
+            <figure class="portfolio__item">
+                <a href="./img/img1.jpg" data-lightbox="gallery">
+                    <img src="./img/img1.jpg" alt="img1">
+                    <figcaption class="portfolio__overlay">
+                        <div class="portfolio__detail">
+                            <div class="portfolio__align">
+                                <h4>GALLERY</h4>
+                                <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="portfolio__item">
+                <a href="./img/img2.jpg" data-lightbox="gallery">
+                    <img src="./img/img2.jpg" alt="img2">
+                    <figcaption class="portfolio__overlay">
+                        <div class="portfolio__detail">
+                            <div class="portfolio__align">
+                                <h4>GALLERY</h4>
+                                <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="portfolio__item">
+                <a href="./img/img3.jpg" data-lightbox="gallery">
+                    <img src="./img/img3.jpg" alt="img3">
+                    <figcaption class="portfolio__overlay">
+                        <div class="portfolio__detail">
+                            <div class="portfolio__align">
+                                <h4>GALLERY</h4>
+                                <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="portfolio__item">
+                <a href="./img/img4.jpg" data-lightbox="gallery">
+                    <img src="./img/img4.jpg" alt="img4">
+                    <figcaption class="portfolio__overlay">
+                        <div class="portfolio__detail">
+                            <div class="portfolio__align">
+                                <h4>GALLERY</h4>
+                                <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="portfolio__item">
+                <a href="./img/img5.jpg" data-lightbox="gallery">
+                    <img src="./img/img5.jpg" alt="img5">
+                    <figcaption class="portfolio__overlay">
+                        <div class="portfolio__detail">
+                            <div class="portfolio__align">
+                                <h4>GALLERY</h4>
+                                <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="portfolio__item">
+                <a href="./img/img6.jpg" data-lightbox="gallery">
+                    <img src="./img/img6.jpg" alt="img6">
+                    <figcaption class="portfolio__overlay">
+                        <div class="portfolio__detail">
+                            <div class="portfolio__align">
+                                <h4>GALLERY</h4>
+                                <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+    </div>
     <!-- SUBSCRIBE -->
-    <div class="subscribe"></div>
+    <div class="subscribe">
+        <div class="subscribe__content">
+            <h3>Subscribe</h3>
+            <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+            <input type="email" name="email" placeholder="Email">
+            <button>Click</button>
+        </div>
+    </div>
     <!-- AGENTS -->
-    <div class="agents"></div>
+    <div class="agents">
+        <div class="agents__content">
+            <h3>Our Agents</h3>
+            <div class="agents__img">
+                <div class="agents__item">
+                    <img src="./img/t1.jpg" alt="t1">
+                    <figcaption>
+                        <h4>KAT WALLY</h4>
+                        <p>Lorem Ipsum</p>
+                        <div class="agents__icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </figcaption>
+                </div>
+                <div class="agents__item">
+                    <img src="./img/t2.jpg" alt="t2">
+                    <figcaption>
+                        <h4>JOHN MAX</h4>
+                        <p>Lorem Ipsum</p>
+                        <div class="agents__icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </figcaption>
+                </div>
+                <div class="agents__item">
+                    <img src="./img/t3.jpg" alt="t3">
+                    <figcaption>
+                        <h4>ROY KENT</h4>
+                        <p>Lorem Ipsum</p>
+                        <div class="agents__icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </figcaption>
+                </div>
+                <div class="agents__item">
+                    <img src="./img/t4.jpg" alt="t4">
+                    <figcaption>
+                        <h4>JOY IDSON</h4>
+                        <p>Lorem Ipsum</p>
+                        <div class="agents__icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="agents__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.92232419213!2d-82.59436669114524!3d27.99441157160181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida!5e0!3m2!1svi!2sus!4v1664805416633!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <!-- CONTACT -->
-    <div class="contact"></div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <div class="contact__content">
+            <div class="contact__left">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone">
+            </div>
+            <div class="contact__right">
+                <textarea id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+        <div class="footer__content">
+            <p>© 2017 Housing. All Rights Reserved | Design by <span>W3layouts</span></p>
+            <div class="footer__icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa fa-wifi"></i>
+                <i class="fab fa-vk"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- BACK TO TOP -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- thư viện hỗ trợ jquerry giúp chạy hiệu ứng của các thư viện animation -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -256,8 +460,19 @@
 
     <!-- Boot trap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
+    <!-- light box js -->
+    <script src="./js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+        })
+    </script>
+
+    <!-- back to top js -->
+    <script src="./js/main_BTT.js"></script>
+    <script src="./js/util.js"></script>
 
 </body>
-
 </html>
